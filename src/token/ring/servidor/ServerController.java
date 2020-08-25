@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class ServerController {
 
-    private String TOKEN = "WOW";
+    private String TOKEN = "BB8";
     private ServerSocket serverLogin;
     private ServerSocket serverSend;
     private Socket socket;
