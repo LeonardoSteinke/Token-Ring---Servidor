@@ -46,8 +46,6 @@ public class Server extends javax.swing.JFrame {
     private void initComponents() {
 
         bntTokenRing = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        lblMsg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -58,31 +56,19 @@ public class Server extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Ultima mensagem recebida:");
-
-        lblMsg.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        lblMsg.setText("Nenhum Conteúdo");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lblMsg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1)
-                    .addComponent(bntTokenRing, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE))
+                .addComponent(bntTokenRing, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(69, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(84, 84, 84)
                 .addComponent(bntTokenRing, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(116, Short.MAX_VALUE))
         );
@@ -136,18 +122,10 @@ public class Server extends javax.swing.JFrame {
         });
     }
 
-    public JLabel getLblMsg() {
-        return lblMsg;
-    }
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bntTokenRing;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel lblMsg;
     // End of variables declaration//GEN-END:variables
 
-    void setText(String content) {
-       lblMsg.setText(content);
-    }
+  
 }

@@ -25,11 +25,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="lblMsg" max="32767" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <Component id="bntTokenRing" pref="256" max="32767" attributes="0"/>
-              </Group>
+              <Component id="bntTokenRing" min="-2" pref="256" max="-2" attributes="0"/>
               <EmptySpace pref="69" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -37,11 +33,7 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="lblMsg" min="-2" pref="40" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
               <Component id="bntTokenRing" min="-2" pref="100" max="-2" attributes="0"/>
               <EmptySpace pref="116" max="32767" attributes="0"/>
           </Group>
@@ -56,19 +48,6 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bntTokenRingActionPerformed"/>
       </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ultima mensagem recebida:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblMsg">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Dialog" size="18" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Nenhum Conte&#xfa;do"/>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>
